@@ -1,0 +1,52 @@
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top border-bottom border-dark">
+
+        <!--        Logo-->
+
+        <a href="/" class="navbar-brand" aria-label="SSA Brand Logo"><img class="logo" src="/images/logo/EllipseGroupN.svg"
+                                                       style="width:auto;height:30px;" alt="logo"></a>
+
+        <!--        Hamburger menu-->
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle Main navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--        Menu items-->
+
+        <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav mr-auto justify-content-start text-right">
+                <li class="nav-item">
+                    <a href="/about" class="nav-link">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="/products/products-display" class="nav-link">Shop</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="/contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav text-right">
+
+                <% if(!isLoggedIn){ %>
+                    <li class="nav-item nav-link admin-btn"><a href="/users/login" class="">Login</a></li>
+                <% } else { %>
+                    <a href="/users/logout" class="nav-item nav-link">Log Out</a>
+                <% } %>
+
+                <li class="nav-item">
+<!--                    <a href="/products/cart" class="nav-link"><img src="/images/cart.svg"-->
+<!--                                                                    style="width:auto;height:17px;" alt="cart">-->
+                    <a href="/products/cart" class="nav-link">Cart
+                    </a>
+
+
+
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</div>
