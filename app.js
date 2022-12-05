@@ -156,7 +156,7 @@ app.get('/about', (req, res) => {
 
 //contact
 app.get('/contact', (req, res) => {
-    res.render('contact', { title: 'Contact', isLoggedIn: req.user });
+    res.render('contact', { title: 'İletişim', isLoggedIn: req.user });
 });
 
 //product routes
