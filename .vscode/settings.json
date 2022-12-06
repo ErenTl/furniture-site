@@ -1,5 +1,5 @@
 {
-    "appService.defaultWebAppToDeploy": "/subscriptions/34720e87-ed4e-48db-9952-b6954530ea09/AppServices/subscriptions/34720e87-ed4e-48db-9952-b6954530ea09/resourceGroups/NodeBulutProje_group/providers/Microsoft.Web/sites/NodeBulutProje",
+    "appService.defaultWebAppToDeploy": "/subscriptions/34720e87-ed4e-48db-9952-b6954530ea09/AppServices/subscriptions/34720e87-ed4e-48db-9952-b6954530ea09/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/bulutmobilyaproje",
     "appService.deploySubpath": ".",
     "liveServer.settings.port": 5501
 }
