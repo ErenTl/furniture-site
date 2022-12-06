@@ -116,7 +116,7 @@ paypal.configure({
 app.get('/', (req, res) => {
             Product.find().sort({ createdAt: -1 })
                 .then(result => {
-                    res.render('index', { title: 'Home', isLoggedIn: req.user, products: result })
+                    res.render('index', { title: 'Ana Sayfa', isLoggedIn: req.user, products: result })
                 })
         });
 
@@ -135,15 +135,15 @@ app.post('/pay', paymentController.paymentStart);
 app.get('/redirect', paymentController.successPayment);
 
 app.get('/success', (req, res) =>
-    res.render('success', {title: "Successful Payment", isLoggedIn: req.user}
+    res.render('success', {title: "Başarılı Ödeme", isLoggedIn: req.user}
     ));
 
 app.get('/redirect', (req, res) =>
-    res.render('redirect', {title: "Successful Payment", isLoggedIn: req.user}
+    res.render('redirect', {title: "Başarılı Ödeme", isLoggedIn: req.user}
     ));
 
 app.get('/cancel', (req, res) =>
-    res.render('cancel', {title: "Cancelled", isLoggedIn: req.user}
+    res.render('cancel', {title: "İptal Edildi", isLoggedIn: req.user}
     ));
 
 
@@ -151,7 +151,7 @@ app.get('/cancel', (req, res) =>
 //about
 
 app.get('/about', (req, res) => {
-    res.render('about', { title: 'About', isLoggedIn: req.user });
+    res.render('about', { title: 'Hakkımızda', isLoggedIn: req.user });
 });
 
 //contact
